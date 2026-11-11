@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of Reset Button.</title>
+        <style>
+            body{
+                font-family: Calibri, Helvetica, sans-serif;
+                background-color: pink;
+            }
+            .container{
+                padding: 50px;
+                background-color: lightblue;
+            }
+            input[type=text]{
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+            input[type=text]:focus{
+                background-color: orange;
+                outline: none;
+
+            }
+            div{
+                padding: 10px 0;
+            }
+            hr{
+                 border: 1px solid #f1f1f1;  
+                 margin-bottom: 25px;  
+            }
+            button {  
+                 background-color: #4CAF50;  
+                 color: white;    
+                 margin: 8px 0;  
+                 border: none;  
+                 cursor: pointer;  
+  
+                 padding: 16px 20px;  
+                 width: 100%;  
+                 opacity: 0.9;  
+            }
+            button:hover{
+                opacity: 1;
+            }  
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="container">
+                <center><h1>Form</h1></center>
+                <hr>
+                <label for="fn">Firstname: </label>
+                <input type="text" id="fn" name="fn" placeholder="Firstname" size="15" required/>
+                <label for="mn">Middlename: </label>
+                <input type="text" id="mn" name="mn" placeholder="Middlename" size="15" required/>
+                <label for="ln">Lastname: </label>
+                <input type="text" id="ln" name="ln" placeholder="Lastname" size="15" required/>
+                <div>
+                    <label>
+                        Gender:
+                    </label><br>
+                    <input type="radio" value="Male" name="gender" checked>Male
+                    <input type="radio" value="Female" name="gender">Female
+                    <input type="radio" value="Other" name="gender">Other
+                </div>
+                    <label>
+                        Phone: 
+                    </label>
+                    <input type="text" name="country code" placeholder="Country Code" value="+91" size="2"/>
+                    <input type="text" name="phone" id="phn" placeholder="phone no" size="10" required/>
+                    <label for="em">Email</label>
+                    <input type="text" id="em" placeholder="Enter Email" name="email" required/>
+                    The below button displays as the reset button which is used to reset the filled values of a form to its initial values.   
+                    <button type="reset" value="submit">Reset</button>
+
+
+
+            </div>
+        </form>
+    </body>
+</html>

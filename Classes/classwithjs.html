@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>HTML Classes with JavaScript</title>
+    </head>
+    <body>
+        <h2>Class Attribute with JavaScript</h2>
+        <p>Click the button, to hide all elements with the class name "fruit" with JavaScript.</p>
+        <button onclick="myFunction()">Hide Elements</button>"
+        <h2 class="fruit">Mango</h2>
+        <p>Mango is King of all fruits.</p>
+        <h2 class="fruit">Banana</h2>
+        <p>Banana is a good source of potassium.</p>
+        <h2 class="fruit">Ap.ple</h2>
+        <p>Apple is a good source of fiber.</p>
+        <script>
+            function myFunction(){
+                const elements=document.getElementsByClassName("fruit");
+                for(let el of elements){
+                    el.style.display="none";
+                
+                }
+            }
+        </script>
+
+    </body>
+</html>

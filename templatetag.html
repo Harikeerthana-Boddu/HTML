@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Template Element Example</h1>
+        <p>To view the template element's concealed content. click the button below.</p>
+        <button onclick="showContent()">Show Content</button>
+        <template>
+            <h2>Lion</h2>
+            <img src="Loin Image.jpg" alt="Lion" width="100" height="100">
+                    </template>
+
+            <script>
+                function showContent(){
+                    let temp=document.getElementsByTagName("template")[0];
+                    let clon=temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                }
+            </script>
+
+    </body>
+</html>

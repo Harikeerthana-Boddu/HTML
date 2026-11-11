@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of Hidden Attribute in input tag</title>
+        <style>
+            body{
+                font-family: Calibri, Helvetica, sans-serif;  
+background-color: pink;  
+            }
+            .container {  
+padding: 50px;  
+background-color: lightblue;  
+}  
+input[type=text] {  
+  width: 100%;  
+  padding: 15px;  
+margin: 5px 0 22px 0;  
+ border: none;  
+ background: #f1f1f1;  
+}  
+  
+input[type=text]:focus {  
+background-color: orange;  
+outline: none;  
+} 
+div {  
+            padding: 10px 0;  
+}      
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}   
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="container">
+
+            <center><h1>Registration Form</h1></center>
+            <hr>
+        <label for="fn">First Name:</label>
+        <input hidden type="text" name="fn" id="fn" size="15" required/>
+        <div>  
+<label for="mn"> Middlename: </label>   
+<input type="text" name="middlename" id="mn" size="15" required />   
+</div>  
+        <label for="Ln"> Lastname: </label>    
+<input type="text" name="lastname" id="Ln" size="15"required />   
+  
+<label for="pn">   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>  
+<input hidden type="text"  name="phone" id="pn" size="10"/ required>   
+</hr>  
+</div>
+        </form>
+
+    </body>
+</html>

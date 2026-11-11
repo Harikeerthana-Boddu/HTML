@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Including JS in body tag
+        </title>
+        <style>
+            button{
+                background-color: red;
+                padding: 16px 20px;
+                margin:8px 0;
+                border: none;
+                cursor: pointer;
+                color: white;
+                width: 100%;
+                opacity: 0.9;
+            }
+            button:hover{
+                opacity: 1;
+            }
+        </style>
+
+    </head>
+    <body>
+        <script>
+            function check(){
+                confirm("Your JS is running by adding in the body tag");
+            }
+            
+        </script>
+        <button type="button" onclick="check()">Click me for running JS code</button>
+    </body>
+</html>
